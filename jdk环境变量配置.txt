@@ -1,0 +1,28 @@
+JAVA_HOME
+	E:\Java\jdk-10.0.2
+	E:\Java\jdk1.8.0_74
+
+默认：	C:\Program Files\Java\jdk1.8.0_74
+
+CLASSPATH
+	
+	.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar
+
+PATH
+	%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
+
+
+
+修改jdk版本 只需要改变JAVA_HOME  其他不变
+
+
+
+问题描述：安装了又一版本的JDK，将系统环境变量中的JAVA_HOME改为新的JDK目录路径，但是java-version查看JDK版本仍然是以前版本的JDK
+
+解决方法：
+
+1.将系统环境变量Path中的%JAVA_HOME%/bin（注意不要选错了） 移到最前面；
+2.也有一种说法是删除C:\Windows\System32目录下删除这3个文件java.exe javaw.exe javaws.exe
+
+亲测第一种有效，第二种记下，说不定哪次也有用。
+
